@@ -6,6 +6,13 @@ app.get("/", (req, res) => {
     res.send("Hello World!");
 });
 
+app.get("/about", (req, res) => {
+    res.json({
+        status: "Success",
+        message: "This is about page",
+    });
+});
+
 app.listen(port, "0.0.0.0", () => {
     console.log(`Example app listening on port ${port}`);
 });
