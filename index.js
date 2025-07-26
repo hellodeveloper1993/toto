@@ -20,6 +20,13 @@ app.get("/contact", (req, res) => {
     });
 });
 
+app.get("/profile", (req, res) => {
+    res.json({
+        status: "Success",
+        message: "This is profile page",
+    });
+});
+
 app.listen(port, "0.0.0.0", () => {
     console.log(`Example app listening on port ${port}`);
 });
