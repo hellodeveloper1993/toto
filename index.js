@@ -27,6 +27,13 @@ app.get("/profile", (req, res) => {
     });
 });
 
+app.get("/newsfeed", (req, res) => {
+    res.json({
+        status: "Success",
+        message: "This is newsfeed page",
+    });
+});
+
 app.listen(port, "0.0.0.0", () => {
     console.log(`Example app listening on port ${port}`);
 });
